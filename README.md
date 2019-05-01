@@ -20,6 +20,8 @@ Just Got clone or make a copy   of the files  that you need.
 | vuejs       | A plain VUE JS startign page  document     |  HTML5, VUeJS (via CDN)  |
 | bootstrap   | A plain Bootstrap 4 starter page   document     |  HTML5, Bootstrap 4  (via CDN)  |
 | jquery      | A plain Jquery 3 starter page   document     |  HTML5, Jquery 3   (via CDN)  |
+
+hotrealod.js and hotrealod.php are helper scripts when developing applications where the UI is changing quickly, and as a developer aid to more quickly show pages.
 	 
 ## Contributing
 1. Fork it!
