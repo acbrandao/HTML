@@ -45,7 +45,7 @@ http.createServer(function(request, response) {
         
      var date = new Date();
      var current_hour = date.getHours();
-     var ip= req.connection.remoteAddress || req.socket.remoteAddress ||   req.connection.socket.remoteAddress;
+     var ip= req.connection.remoteAddress || req.socket.remoteAddress;
       console.log(current_hour+ " Served Request for: "+filename+" type:  "+contentType+ " ip:"+ip);  
     });
   });
