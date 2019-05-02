@@ -42,6 +42,11 @@ http.createServer(function(request, response) {
       response.writeHead(200, headers);
       response.write(file, "binary");
       response.end();
+        
+     var date = new Date();
+     var current_hour = date.getHours();
+     var ip= req.connection.remoteAddress || req.socket.remoteAddress ||   req.connection.socket.remoteAddress;
+      console.log(current_hour+ " Served Request for: "+filename+" type:  "+contentType+ " ip:"+);  
     });
   });
 }).listen(parseInt(port, 10));
