@@ -6,8 +6,7 @@ var http = require("http"),
 
 http.createServer(function(request, response) {
 
-  var uri = url.parse(request.url).pathname
-    , filename = path.join(process.cwd(), uri);
+  var uri = url.parse(request.url).pathname , filename = path.join(process.cwd(), uri);
 
   var contentTypesByExtension = {
     '.html': "text/html",
@@ -15,6 +14,7 @@ http.createServer(function(request, response) {
     '.js':   "text/javascript"
   };
 
+   // 404 - File not found
   fs.exists(filename, function(exists) {
     if(!exists) {
       response.writeHead(404, {"Content-Type": "text/plain"});
@@ -23,8 +23,10 @@ http.createServer(function(request, response) {
       return;
     }
 
+    // default filename to index.html if one is not given
     if (fs.statSync(filename).isDirectory()) filename += '/index.html';
 
+    //issue standard file read and send out the web page
     fs.readFile(filename, "binary", function(err, file) {
       if(err) {        
         response.writeHead(500, {"Content-Type": "text/plain"});
@@ -33,6 +35,7 @@ http.createServer(function(request, response) {
         return;
       }
 
+      //adjust the headers based on array of known file content contentTypesByExtension
       var headers = {};
       var contentType = contentTypesByExtension[path.extname(filename)];
       if (contentType) headers["Content-Type"] = contentType;
