@@ -1,9 +1,8 @@
 # Starter Templates
-This folder has an assorted collection of starter HTML/JS and other pages (mostly web pages). 
+This folder has an assorted collection of starter HTML/JS and other pages (mostly web pages or node javascript pages). 
 This is my go to place when I'm starting a new project or new application from scratch, there's
 plenty of these located on the web, but this is just my nice little location for all the web pages
 that I'm interested in.
-
 
 ## Installation
 
@@ -20,6 +19,7 @@ Just Got clone or make a copy   of the files  that you need.
 | vuejs       | A plain VUE JS startign page  document     |  HTML5, VUeJS (via CDN)  |
 | bootstrap   | A plain Bootstrap 4 starter page   document     |  HTML5, Bootstrap 4  (via CDN)  |
 | jquery      | A plain Jquery 3 starter page   document     |  HTML5, Jquery 3   (via CDN)  |
+| nodejs_http2      | A plain http-server in node, server most text/plain html page   documents     | nodejs, JS )  |
 
 hotrealod.js and hotrealod.php are helper scripts when developing applications where the UI is changing quickly, and as a developer aid to more quickly show pages.
 	 
