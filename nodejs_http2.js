@@ -8,10 +8,14 @@ http.createServer(function(request, response) {
 
   var uri = url.parse(request.url).pathname , filename = path.join(process.cwd(), uri);
 
+var timestamp = new Date().toISOString();
+var ip= request.connection.remoteAddress || request.socket.remoteAddress;
+console.log(timestamp+ " ip:"+ip+" Served Request URL: "+request.url);  
+
   var contentTypesByExtension = {
     '.html': "text/html",
     '.css':  "text/css",
-    '.js':   "text/javascript"
+    '.js':   "text/javascript" 
   };
 
    // 404 - File not found
@@ -42,13 +46,16 @@ http.createServer(function(request, response) {
       response.writeHead(200, headers);
       response.write(file, "binary");
       response.end();
-        
-     var date = new Date();
-     var current_hour = date.getHours();
-     var ip= req.connection.remoteAddress || req.socket.remoteAddress;
-      console.log(current_hour+ " Served Request for: "+filename+" type:  "+contentType+ " ip:"+ip);  
+
     });
+
+
+
   });
+
+
 }).listen(parseInt(port, 10));
 
-console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+console.log("Static file server running at  ");
+console.log('\x1b[1m\x1b[32m' ,"=> http://localhost:" + port  );
+console.log('\x1b[0m',"\n-------------------------------/\nCTRL + C to shutdown \n");
