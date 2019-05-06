@@ -27,16 +27,17 @@ setInterval( function() {
            if (xmlhttp.status == 200) {
  				//console.log(xmlhttp.responseText);
  				j=JSON.parse(xmlhttp.responseText);
- 				console.log(j);
+ 				
  				//if file changed RESTULT is TRUE we issue a 
 
  				if (j.hasChanged)
  				  { 
- 					console.log("Changed!");
+				   console.log(j);
+ 				   console.log("Changed!");
  				    window.location.reload(false);
  				   }	
  				else
-				console.log("No Change:");
+				console.log(".");
  
  				
            }
