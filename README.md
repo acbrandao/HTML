@@ -8,7 +8,7 @@ that I'm interested in.
 
 Simlply clone this folder, or click on the file you're interested in and just copy it to your working direcotry.
 
-```
+```bash
 git clone git@github.com:acbrandao/templates.git
 ```
 
@@ -19,16 +19,16 @@ As described above clone the **this** repositry first into the folder you are wo
 This create a *templates* folder in the same directory where you issues the git clone.
 Next just copy the **individual** template(s) you need to from the /templates folder into the folder you want to use like:
 
-```
+```bash
 cp templates/index.html .
 ```
 or maybe you want to start a basic a VUE page named vue.php
-```
+```bash
 cp templates/vuejs.html vue.php
 ```
 
 or a reload script as idnex.html
-```
+```bash
 cp templates/vuereload.html index.html
 ```
 ## Using hotreload.js and hotreload.php
@@ -37,11 +37,11 @@ This scripts are useful as development aids. be sure to copy them both from the 
 into the folder where you want them to be used.  This is required as the hotreload.php works in
 the current folder.
 
-``` 
+```bash
 cp templates/hotreload.* .
 ```
 Then just include the hotreload js in the <head> </head> section of your web paage like
-```
+```hmtl
 <head>
 <script src="hotreload.js"></script>
 </head>
