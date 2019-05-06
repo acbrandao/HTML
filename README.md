@@ -31,6 +31,22 @@ or a reload script as idnex.html
 ```
 cp templates/vuereload.html index.html
 ```
+## Using hotreload.js and hotreload.php
+
+This scripts are useful as development aids. be sure to copy them both from the templates folder
+into the folder where you want them to be used.  This is required as the hotreload.php works in
+the current folder.
+
+``` 
+cp templates/hotreload.* .
+```
+Then just include the hotreload js in the <head> </head> section of your web paage like
+```
+<head>
+<script src="hotreload.js"></script>
+</head>
+```
+
 
 Now you have the index.html ready to go , repeat as needed for each template. 
 Using this technique keeps the original templates unchanged and allows you to re-use them as often as needed.
