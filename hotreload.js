@@ -9,13 +9,14 @@
 ///   Revision History:
 ///   Name:           Date:        Description:
 ///-----------------------------------------------------------------
+var php_reload_url="hotreload.php";
 var page =location.href.split("/").slice(-1); 
 if (page=="") 
   page="index.html" ;  //defaults to index.hmtl or index.php
 
 
 console.log(" Current page: "+ page );
-var url="hotreload.php?file="+page ; //change this to whatever you want it to be
+var url=php_reload_url+"?file="+page ; //change this to whatever you want it to be
 var poll_interval=2000; //every x seconds poll for file changes.
 
 setInterval( function() {
@@ -39,7 +40,7 @@ setInterval( function() {
  				
            }
            else if (xmlhttp.status == 400) {
-              alert('error 400');
+              alert('error 400 - Page not Found ..looking for '+php_reload_url);
            }
            else {
                alert('Error '+xmlhttp.status );
