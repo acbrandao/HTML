@@ -6,7 +6,18 @@ that I'm interested in.
 
 ## Installation
 
-Simlply clone this folder, or click on the file you're interested in and just copy it to your working direcotry
+Simlply clone this folder, or click on the file you're interested in and just copy it to your working direcotry.
+
+```
+git clone git@github.com:acbrandao/templates.git
+```
+Next just copy the template(s) you need to from the /templates folder into the folder you want to use like:
+
+```
+cp /templates/index.html .
+```
+
+Now you have the index.html ready to go , repeat as needed for each template
 
 ## Usage
 
