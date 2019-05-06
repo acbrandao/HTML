@@ -9,7 +9,7 @@
 ///   Revision History:
 ///   Name:           Date:        Description:
 ///-----------------------------------------------------------------
-var php_reload_url="templates/hotreload.php";
+var php_reload_url="templates/hotreload.php";  //default to templates folder - adust to suit
 var page =location.href.split("/").slice(-1); 
 if (page=="") 
   page="index.html" ;  //defaults to index.hmtl or index.php
