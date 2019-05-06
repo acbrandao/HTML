@@ -22,6 +22,15 @@ Next just copy the **individual** template(s) you need to from the /templates fo
 ```
 cp templates/index.html .
 ```
+or maybe you want to start a basic a VUE page named vue.php
+```
+cp templates/vuejs.html vue.php
+```
+
+or a reload script as idnex.html
+```
+cp templates/vuereload.html index.html
+```
 
 Now you have the index.html ready to go , repeat as needed for each template. 
 Using this technique keeps the original templates unchanged and allows you to re-use them as often as needed.
