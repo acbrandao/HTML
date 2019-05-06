@@ -11,17 +11,21 @@ Simlply clone this folder, or click on the file you're interested in and just co
 ```
 git clone git@github.com:acbrandao/templates.git
 ```
-Next just copy the template(s) you need to from the /templates folder into the folder you want to use like:
-
-```
-cp /templates/index.html .
-```
-
-Now you have the index.html ready to go , repeat as needed for each template
 
 ## Usage
 
-Just Got clone or make a copy   of the files  that you need.
+As described above clone the **this** repositry first into the folder you are working in.
+
+This create a *templates* folder in the same directory where you issues the git clone.
+Next just copy the **individual** template(s) you need to from the /templates folder into the folder you want to use like:
+
+```
+cp templates/index.html .
+```
+
+Now you have the index.html ready to go , repeat as needed for each template. 
+Using this technique keeps the original templates unchanged and allows you to re-use them as often as needed.
+
 
 ## Description of each
 | Directroy                   | Description   | Dependencies  |
