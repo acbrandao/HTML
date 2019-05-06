@@ -9,6 +9,7 @@
 ///   Revision History:
 ///   Name:           Date:        Description:
 ///-----------------------------------------------------------------
+var poll_interval=2000; //1000 = 1 seconds poll for file changes.
 var php_reload_url="hotreload.php";  //default to templates folder - adust to suit
 var page =location.href.split("/").slice(-1); 
 if (page=="") 
@@ -17,7 +18,7 @@ if (page=="")
 
 console.log(" Current page: "+ page );
 var url=php_reload_url+"?file="+page ; //change this to whatever you want it to be
-var poll_interval=2000; //every x seconds poll for file changes.
+
 
 setInterval( function() {
     var xmlhttp = new XMLHttpRequest();
