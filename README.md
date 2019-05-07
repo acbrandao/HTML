@@ -6,6 +6,23 @@ This is my go to place when I'm starting a new project or new application from s
 plenty of these located on the web, but this is just my nice little location for all the web pages
 that I'm interested in.
 
+# Note on VS Code (Visual Studio Code)
+if you are using Visual Studio (VS Code)  code https://code.visualstudio.com/  , you may not need many of these templates as they are *built-in* to VS Code using something they termed Emmet (https://code.visualstudio.com/docs/editor/emmet) which is a syntax expansion capability built in for most populat languages.  Using something like this, just start a new file save it as filename.html then using then just tye **html:5** for example and it will expand the code to 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
 ## Installation
 
 Simlply clone this folder, or click on the file you're interested in and just copy it to your working direcotry.
