@@ -1,4 +1,6 @@
 # Starter Templates
+
+<img align="right" width="300" src="https://github.com/acbrandao/templates/blob/master/img/html5.PNG">
 This folder has an assorted collection of starter HTML/JS and other pages (mostly web pages or node javascript pages). 
 This is my go to place when I'm starting a new project or new application from scratch, there's
 plenty of these located on the web, but this is just my nice little location for all the web pages
