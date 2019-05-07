@@ -15,7 +15,8 @@ console.log(timestamp+ " ip:"+ip+" Served Request URL: "+request.url);
   var contentTypesByExtension = {
     '.html': "text/html",
     '.css':  "text/css",
-    '.js':   "text/javascript" 
+    '.js':   "text/javascript" ,
+     '.json': "application/json"
   };
 
    // 404 - File not found
