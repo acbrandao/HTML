@@ -67,9 +67,9 @@ hotrealod.js and hotrealod.php are helper scripts when developing applications w
 
 
 ## Note on VS Code (Visual Studio Code)
-<img align="left" width="300" src="https://github.com/acbrandao/templates/blob/master/img/emmet_vscode.png">
-if you are using Visual Studio (VS Code)  code https://code.visualstudio.com/  , you may not need many of these templates as they are *built-in* to VS Code using something they termed Emmet (https://code.visualstudio.com/docs/editor/emmet) which is a syntax expansion capability built in for most populat languages.  Using something like this, just start a new file save it as filename.html then using then just tye **html:5** for example and it will expand the code to :
 
+if you are using Visual Studio (VS Code)  code https://code.visualstudio.com/  , you may not need many of these templates as they are *built-in* to VS Code using something they termed Emmet (https://code.visualstudio.com/docs/editor/emmet) which is a syntax expansion capability built in for most populat languages.  Using something like this, just start a new file save it as filename.html then using then just tye **html:5** for example and it will expand the code to :
+<img align="left" width="400" src="https://github.com/acbrandao/templates/blob/master/img/emmet_vscode.png">
 
 ```html
 <!DOCTYPE html>
